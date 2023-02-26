@@ -1,0 +1,17 @@
+name: game
+
+on:
+  push:
+    branches:
+      - master
+jobs:
+  fs:
+     runs-on: ubuntu-latest
+        steps:
+      - name: Checkout source Code
+        uses: actions/checkout@v1
+      - name: Install the dependancies
+        run: npm ci
+      - name: End message
+        run: echo 'All done'
+       
