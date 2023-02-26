@@ -7,7 +7,7 @@ on:
 jobs:
   fs:
      runs-on: ubuntu-latest
-        steps:
+     steps:
       - name: Checkout source Code
         uses: actions/checkout@v1
       - name: Install the dependancies
