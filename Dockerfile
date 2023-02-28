@@ -17,4 +17,4 @@ COPY . /app
 EXPOSE 9000
 
 # Définir la commande à exécuter lorsque le conteneur démarre
-CMD ["python", "app.py"]
+CMD ["python", "main.py"]
