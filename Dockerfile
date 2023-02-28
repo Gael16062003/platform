@@ -11,10 +11,10 @@ WORKDIR /app
 COPY . /app
 
 # Installer les packages Python
-RUN pip install --no-cache-dir -r requirements.txt
+# RUN pip install --no-cache-dir -r requirements.txt
 
 # Exposer le port utilisé par l'application
-EXPOSE 8080
+EXPOSE 9000
 
 # Définir la commande à exécuter lorsque le conteneur démarre
 CMD ["python", "app.py"]
